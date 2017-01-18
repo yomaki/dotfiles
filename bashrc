@@ -1,3 +1,7 @@
 # hoge from mbm; already merged to master
-# hoge from mbm 
-# hoge from mba
+
+if [ -n $LOCAL ]; then
+    LOCAL='local'
+fi
+
+PS1='\u@$LOCAL : \W \$ '
