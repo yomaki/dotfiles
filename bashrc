@@ -1,6 +1,6 @@
-# hoge from mbm; already merged to master
+# bashrc@github
 
-if [ -n $LOCAL ]; then
+if [ "${LOCAL}" = "" ]; then
     LOCAL='local'
 fi
 
