@@ -1,7 +1,7 @@
 # bashrc@github
 
-if [ "${LOCAL}" = "" ]; then
-    LOCAL='local'
+if [ "${MACHINENAME}" = "" ]; then
+    MACHINENAME='local'
 fi
 
-PS1='\u@$LOCAL : \W \$ '
+PS1='\u@$MACHINENAME : \W \$ '
