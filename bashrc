@@ -6,3 +6,4 @@
 
 # alias
 alias work='cd ~/Documents/workspace'
+alias ls='ls -G'
