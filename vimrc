@@ -14,6 +14,22 @@ set ts=4 sw=4
 set softtabstop=4
 set expandtab
 
+if expand("%:t") =~ ".*\.py"
+    set tabstop=4
+    set shiftwidth=4
+    set expandtab
+endif
+
+if expand("%:t") =~ ".*\.R"
+    set tabstop=2
+    set shiftwidth=2
+endif
+
+if expand("%:t") =~ ".*\.cpp"
+    set tabstop=2
+    set shiftwidth=2
+endif
+
 " High light for searching a word.
 set hlsearch
 
