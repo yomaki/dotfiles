@@ -15,3 +15,7 @@ if [ -f ~/.bash_profile ]; then
     mv ~/.bash_profile ~/.bash_profile_org
 fi
 ln -s /Users/$USER/.dotfiles_github/bash_profile_macos /Users/$USER/.bash_profile
+
+
+# switch off Photo.app automatically booting
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
