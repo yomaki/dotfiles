@@ -16,6 +16,11 @@ if [ -f ~/.bash_profile ]; then
 fi
 ln -s /Users/$USER/.dotfiles_github/bash_profile_macos /Users/$USER/.bash_profile
 
+# set vimrc
+if [ -f ~/.vimrc ]; then
+    mv ~/.vimrc ~/.vimrc_org
+fi
+ln -s /Users/$USER/.dotfiles_github/vimrc /Users/$USER/.vimrc
 
 # switch off Photo.app automatically booting
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES
