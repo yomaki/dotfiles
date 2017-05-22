@@ -1,0 +1,4 @@
+# bashrc for Linux
+
+# alias
+alias ls='ls --color=auto'
