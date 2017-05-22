@@ -8,16 +8,16 @@
 if [ -f ~/.bashrc ]; then
     mv ~/.bashrc ~/.bashrc_org
 fi
-ln -s /home/$USER/.dotfiles_github/bashrc_linux /home/$USER/.bashrc
+ln -s $HOME/.dotfiles_github/bashrc_linux $HOME/.bashrc
 
 # set bash_profile
 if [ -f ~/.bash_profile ]; then
     mv ~/.bash_profile ~/.bash_profile_org
 fi
-ln -s /home/$USER/.dotfiles_github/bash_profile_linux /home/$USER/.bash_profile
+ln -s $HOME/.dotfiles_github/bash_profile_linux $HOME/.bash_profile
 
 # set vimrc
 if [ -f ~/.vimrc ]; then
     mv ~/.vimrc ~/.vimrc_org
 fi
-ln -s /home/$USER/.dotfiles_github/vimrc /home/$USER/.vimrc
+ln -s $HOME/.dotfiles_github/vimrc $HOME/.vimrc
