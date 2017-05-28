@@ -21,3 +21,7 @@ if [ -f ~/.vimrc ]; then
     mv ~/.vimrc ~/.vimrc_org
 fi
 ln -s $HOME/.dotfiles_github/vimrc $HOME/.vimrc
+
+# reload config files
+source $HOME/.bashrc
+source $HOME/.bash_profile
