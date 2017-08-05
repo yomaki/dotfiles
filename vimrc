@@ -13,6 +13,7 @@ set autoindent smartindent smartcase
 set ts=4 sw=4
 set softtabstop=4
 set expandtab
+set colorcolumn=80
 
 if expand("%:t") =~ ".*\.py"
     set tabstop=4
