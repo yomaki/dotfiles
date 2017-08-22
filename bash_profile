@@ -13,6 +13,8 @@ elif [ `uname` = "Linux" ];then
     export PS1="\[\e[32m\]\u@`uname -n | sed -e "s/\.local//g"`\[\e[0m\] : \W \$ "
 fi 
 
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
 
 # load bashrc
 test -r ~/.bashrc && . ~/.bashrc
