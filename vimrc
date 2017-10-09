@@ -9,6 +9,7 @@ set number
 set showmatch
 set backspace=indent,eol,start
 set autoindent smartindent smartcase
+set noswapfile
 
 set ts=4 sw=4
 set softtabstop=4
