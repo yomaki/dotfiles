@@ -13,10 +13,17 @@ elif [ `uname` = "Linux" ];then
     export PS1="\[\e[32m\]\u@`uname -n | sed -e "s/\.local//g"`\[\e[0m\] : \W \$ "
 fi 
 
-export PATH="$PYENV_ROOT/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-
-eval "$(pyenv init -)"
-
 # load bashrc
 test -r ~/.bashrc && . ~/.bashrc
+
+
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#export PYENV_ROOT="$HOME/.pyenv"
+
+#eval "$(pyenv init -)"
+
+# The next line updates PATH for the Google Cloud SDK.
+#if [ -f '/usr/local/google-cloud-sdk/path.bash.inc' ]; then source '/usr/local/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+#if [ -f '/usr/local/google-cloud-sdk/completion.bash.inc' ]; then source '/usr/local/google-cloud-sdk/completion.bash.inc'; fi
