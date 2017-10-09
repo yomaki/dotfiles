@@ -17,6 +17,7 @@ if [ -f ~/.bash_profile ]; then
 fi
 #ln -s $HOME/.dotfiles_github/bash_profile $HOME/.bash_profile
 echo "source \$HOME/.dotfiles_github/bash_profile" > $HOME/.bash_profile
+echo "test -r ~/.bashrc && . ~/.bashrc" >> $HOME/.bash_profile
 
 # set vimrc
 if [ -f ~/.vimrc ]; then
