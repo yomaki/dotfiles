@@ -1,0 +1,1 @@
+test -r ~/.zprofile && . ~/.zprofile
