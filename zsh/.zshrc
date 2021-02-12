@@ -26,8 +26,6 @@ case ${OSTYPE} in
         ;;
 esac
 
-alias hey='python3 ~/test.py'
-
 # setting prompt
 if [ -z "$MYENV" ]; then
     MYENV=`uname -s`
